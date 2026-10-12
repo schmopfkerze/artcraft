@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abdullah Osmani – Kunst &amp; Portfolio</title>
+  <meta name="description" content="Portfolio von Abdullah Osmani – Malerei, Zeichnungen und digitale Kunst.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="#start" class="nav__logo">A<span>.</span>O</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks">
+      <a href="#werke">Werke</a>
+      <a href="#ueber">Über mich</a>
+      <a href="#ausstellungen">Ausstellungen</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="start">
+    <div class="hero__text">
+      <p class="eyebrow">Bildender Künstler</p>
+      <h1>Abdullah<br><em>Osmani</em></h1>
+      <p class="hero__lead">
+        Farbe, Form und Stille – eine Sammlung meiner künstlerischen Arbeiten
+        zwischen Malerei, Zeichnung und digitaler Kunst.
+      </p>
+      <a href="#werke" class="btn">Werke ansehen</a>
+    </div>
+    <div class="hero__art" aria-hidden="true">
+      <div class="hero__frame"><div class="art art--1"></div></div>
+    </div>
+  </section>
+
+  <!-- Werke / Galerie -->
+  <section class="section" id="werke">
+    <div class="section__head">
+      <p class="eyebrow">Ausgewählte Arbeiten</p>
+      <h2>Werke</h2>
+    </div>
+
+    <div class="filters" role="tablist">
+      <button class="filter is-active" data-filter="alle">Alle</button>
+      <button class="filter" data-filter="malerei">Malerei</button>
+      <button class="filter" data-filter="zeichnung">Zeichnung</button>
+      <button class="filter" data-filter="digital">Digital</button>
+    </div>
+
+    <!--
+      Eigene Bilder einfügen:
+      1. Bild in den Ordner "images/" legen (z. B. images/werk-01.jpg)
+      2. Im passenden <figure> das <div class="art ..."> ersetzen durch:
+         <img src="images/werk-01.jpg" alt="Titel des Werks" loading="lazy">
+      3. data-category, Titel und Angaben anpassen.
+    -->
+    <div class="gallery" id="gallery">
+      <figure class="work work--tall" data-category="malerei">
+        <div class="art art--1"></div>
+        <figcaption><h3>Morgenlicht</h3><p>Öl auf Leinwand · 80 × 120 cm · 2025</p></figcaption>
+      </figure>
+      <figure class="work" data-category="zeichnung">
+        <div class="art art--2"></div>
+        <figcaption><h3>Stille Linien</h3><p>Tusche auf Papier · 30 × 40 cm · 2024</p></figcaption>
+      </figure>
+      <figure class="work" data-category="digital">
+        <div class="art art--3"></div>
+        <figcaption><h3>Fragment I</h3><p>Digitale Malerei · 2025</p></figcaption>
+      </figure>
+      <figure class="work work--wide" data-category="malerei">
+        <div class="art art--4"></div>
+        <figcaption><h3>Horizont</h3><p>Acryl auf Leinwand · 150 × 90 cm · 2024</p></figcaption>
+      </figure>
+      <figure class="work work--tall" data-category="digital">
+        <div class="art art--5"></div>
+        <figcaption><h3>Fragment II</h3><p>Digitale Malerei · 2025</p></figcaption>
+      </figure>
+      <figure class="work" data-category="zeichnung">
+        <div class="art art--6"></div>
+        <figcaption><h3>Portraitstudie</h3><p>Kohle auf Papier · 42 × 59 cm · 2023</p></figcaption>
+      </figure>
+      <figure class="work" data-category="malerei">
+        <div class="art art--7"></div>
+        <figcaption><h3>Erinnerung</h3><p>Öl auf Holz · 50 × 50 cm · 2023</p></figcaption>
+      </figure>
+      <figure class="work" data-category="digital">
+        <div class="art art--8"></div>
+        <figcaption><h3>Nachtfarben</h3><p>Digitale Malerei · 2024</p></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Über mich -->
+  <section class="section about" id="ueber">
+    <div class="about__portrait">
+      <!-- Ersetze durch: <img src="images/portrait.jpg" alt="Abdullah Osmani"> -->
+      <div class="art art--portrait"><span>AO</span></div>
+    </div>
+    <div class="about__text">
+      <p class="eyebrow">Über mich</p>
+      <h2>Kunst als Sprache</h2>
+      <p>
+        Ich bin Abdullah Osmani, bildender Künstler. In meinen Arbeiten suche ich
+        nach dem Moment, in dem Farbe und Form zu einer eigenen Sprache werden –
+        leise, persönlich und offen für die Deutung der Betrachtenden.
+      </p>
+      <p>
+        Ich arbeite mit Öl, Acryl, Tusche und Kohle ebenso wie mit digitalen
+        Werkzeugen. Jedes Medium bringt seine eigene Haltung mit, und gerade im
+        Wechsel zwischen ihnen entstehen für mich neue Ideen.
+      </p>
+      <ul class="facts">
+        <li><strong>Medien</strong>Öl, Acryl, Tusche, Kohle, Digital</li>
+        <li><strong>Themen</strong>Licht, Erinnerung, Landschaft, Mensch</li>
+        <li><strong>Atelier</strong>Deine Stadt</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Ausstellungen -->
+  <section class="section" id="ausstellungen">
+    <div class="section__head">
+      <p class="eyebrow">Werdegang</p>
+      <h2>Ausstellungen</h2>
+    </div>
+    <ol class="timeline">
+      <li><span>2026</span><div><h3>Titel der Ausstellung</h3><p>Galerie / Ort · Einzelausstellung</p></div></li>
+      <li><span>2025</span><div><h3>Titel der Ausstellung</h3><p>Kunstverein / Ort · Gruppenausstellung</p></div></li>
+      <li><span>2024</span><div><h3>Titel der Ausstellung</h3><p>Ort · Gruppenausstellung</p></div></li>
+    </ol>
+  </section>
+
+  <!-- Kontakt -->
+  <section class="section contact" id="kontakt">
+    <div class="section__head">
+      <p class="eyebrow">Anfragen &amp; Aufträge</p>
+      <h2>Kontakt</h2>
+      <p class="contact__lead">
+        Interesse an einem Werk, einer Auftragsarbeit oder einer Zusammenarbeit?
+        Ich freue mich über deine Nachricht.
+      </p>
+    </div>
+    <form class="form" id="contactForm">
+      <label>Name<input type="text" name="name" required></label>
+      <label>E-Mail<input type="email" name="email" required></label>
+      <label class="form__full">Nachricht<textarea name="message" rows="5" required></textarea></label>
+      <button type="submit" class="btn">Nachricht senden</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Abdullah Osmani · Alle Rechte an den Werken vorbehalten.</p>
+    <div class="footer__links">
+      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:kontakt@example.com">E-Mail</a>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lbClose" aria-label="Schließen">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Vorheriges Werk">‹</button>
+    <div class="lightbox__content">
+      <div class="lightbox__media" id="lbMedia"></div>
+      <div class="lightbox__caption" id="lbCaption"></div>
+    </div>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Nächstes Werk">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
